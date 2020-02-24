@@ -1,0 +1,30 @@
+
+  function fncSubmit()
+    { var password = document.getElementById("member_password") , 
+      confirm_password = document.getElementById("confirm_password");    
+      if(document.getElementById('name').value == "")    
+        {        
+          alert('กรุณากรอกชื่อ');        
+          return false;    
+        }  
+      if(document.getElementById('lastname').value == "")    
+        {        
+          alert('กรุณากรอกนามสกุล');        
+          return false;    
+        }
+      if(document.getElementById('username').value == "")    
+        {        
+          alert('กรุณากรอก Username');        
+          return false;    
+        }
+      if(document.getElementById('password').value == "")    
+        {
+          alert('กรุณากรอก Password ');        
+          return false;    
+        }    
+      if(document.getElementById('password').value != document.getElementById('confirm_password').value)    
+        {
+          alert('Password ไม่ตรงกัน');        
+          return false;    
+        }
+    }
